@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<title>부스터 키우기</title>
+<style type="text/css">
+html{
+	display: block;
+	overflow: auto;
+}
+img {
+	cursor : pointer;
+	vertical-align : bottom;
+}
+</style>
+
+부스터 키우기<br/>
+부스터를 클릭해보세요!&nbsp;<button class="mt10" type="button" onclick="reset();">reset</button>
+<br/><br/>
+<img id="flareon" onclick="growth();" src="./flareon.gif" style="visibility: hidden;">
+<br/><br/>
+	정직한 제목. 정직한 내용.
+
+<script type="text/javascript">
+let flareon = document.getElementById("flareon");
+reset();
+flareon.style = "visibility: initial;";
+
+function growth(){
+	flareon.height += flareon.height;
+	flareon.width += flareon.width;
+}
+function reset(){
+	flareon.width = 57;
+	flareon.height = 92;
+}
+</script>
+
